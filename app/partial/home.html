@@ -1,0 +1,13 @@
+<h2>COUCOU</h2>
+
+<form>
+	<input type="text" ng-model="newUser">
+	<button  ng-click="addUser()">
+		Add a new User!
+	</button>
+</form>
+<ul>
+	<li ng-repeat="user in users">
+		<p>{{user}}</p> <button ng-click="supprUser(user)">suppress it!</button>
+	</li>
+</ul>
